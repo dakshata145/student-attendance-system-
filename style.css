@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5fb;
+    color: #26344a;
+}
+
+header {
+    background: #173b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 150px;
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #ccd4df;
+}
+
+.card h3 {
+    color: #526b8c;
+}
+
+.card p {
+    font-size: 30px;
+    color: #1766bd;
+    margin-top: 12px;
+}
+
+.panel {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #ccd4df;
+}
+
+h2 {
+    color: #173b70;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    margin: 8px 5px 8px 0;
+    border: 1px solid #bbc9da;
+    border-radius: 6px;
+}
+
+button {
+    background: #1766bd;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 8px 5px;
+}
+
+button:hover {
+    background: #10477f;
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+}
+
+.student button {
+    margin: 3px;
+}
+
+.present-btn {
+    background: #198754;
+}
+
+.absent-btn {
+    background: #dc3545;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #526b8c;
+}
+
+@media(max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+}
