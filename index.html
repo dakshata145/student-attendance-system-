@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Attendance System</h1>
+    <p>Manage and Track Student Attendance</p>
+</header>
+
+<main>
+    <section class="dashboard">
+        <div class="card">
+            <h3>Total Students</h3>
+            <p id="total">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Present</h3>
+            <p id="present">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Absent</h3>
+            <p id="absent">0</p>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Add Student</h2>
+
+        <input type="text" id="roll" placeholder="Roll Number">
+        <input type="text" id="name" placeholder="Student Name">
+
+        <button onclick="addStudent()">Add Student</button>
+    </section>
+
+    <section class="panel">
+        <h2>Mark Attendance</h2>
+
+        <label>Select Date:</label>
+        <input type="date" id="date">
+
+        <div id="studentList"></div>
+
+        <button onclick="saveAttendance()">Save Attendance</button>
+    </section>
+
+    <section class="panel">
+        <h2>Attendance Records</h2>
+        <div id="records"></div>
+    </section>
+</main>
+
+<footer>
+    <p>Student Attendance Management System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
